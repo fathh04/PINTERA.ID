@@ -2,109 +2,92 @@
 <html lang="id">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PINTERA.ID adalah platform belajar digital gratis yang mendukung kesetaraan akses pendidikan dan peluang kerja di era digital.">
   <title>PINTERA.ID | Akses Digital Tanpa Batas</title>
 
   <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Abel&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Abel&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
   <!-- CSS -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet" />
 </head>
 
-<body class="bg-info">
-  <!-- Header & Navigation -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <a href="#" class="logo d-flex align-items-center">
-        <h1 class="sitename">PINTERA | Akses Digital Tanpa Batas</h1>
-      </a>
-      <nav id="navmenu" class="navmenu">
-        <ul class="nav">
-          <li><a href="#hero" class="nav-link active">Beranda</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#BelajarMandiri" class="nav-link">Belajar Mandiri</a></li>
-          <li><a href="#PusatDigital" class="nav-link">Pusat Digital</a></li>
-          <li><a href="#team" class="nav-link">Team</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-    </div>
+<a id="wa-button" href="https://wa.me/6285748817841" target="_blank"
+  class="btn btn-success position-fixed shadow rounded-circle p-2 wa-float">
+  <i class="bi bi-whatsapp fs-5"></i>
+</a>
+
+<body class="d-flex flex-column min-vh-100 bg-info">
+  <!-- Header -->
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">PINTERA.ID</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#PusatDigital">Pusat Digital</a></li>
+            <li class="nav-item"><a class="nav-link" href="#MejaDigital">Meja Digital</a></li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section id="hero" class="hero section py-5">
-      <div class="container">
+  <!-- Main Content -->
+  <main class="flex-grow-1">
+    <!-- Hero -->
+    <section id="hero" class="hero pt-5 mt-5 bg-info text-white">
+      <div class="container py-5">
         <div class="row align-items-center">
-          <div class="col-lg-6 hero-content" data-aos="fade-up" data-aos-delay="100">
-            <div class="subtitle">
-              <span>PINTERA.ID</span>
-            </div>
-            <h1 class="title">
-              BELAJAR <span class="highlight">DIGITAL</span> DIMANAPUN
+          <div class="col-lg-6 mb-4" data-aos="fade-up">
+            <h1 class="display-4 fw-bold">
+              BELAJAR <span class="text-dark animate-pulse">DIGITAL</span> DIMANAPUN
             </h1>
-            <div class="description">
-              <p>Platform belajar mandiri yang dirancang untuk semua kalangan. Tanpa batas, tanpa biaya, dan bisa diakses secara offline.</p>
-            </div>
-            <div class="hero-buttons">
-              <a href="#BelajarMandiri" class="primary-btn">
-                Belajar Mandiri <i class="bi bi-chevron-right"></i>
-              </a>
-              <a href="#PusatDigital" class="secondary-btn">
-                Lihat Pusat Digital
-              </a>
-            </div>
+            <p class="lead">Platform belajar mandiri untuk semua kalangan. Gratis, mudah diakses, dan mendukung offline mode.</p>
+            <a href="#BelajarMandiri" class="btn btn-light text-dark me-2">Belajar Mandiri <i class="bi bi-book"></i></a>
+            <a href="#PusatDigital" class="btn btn-outline-light">Lihat Pusat Digital</a>
           </div>
-          <div class="col-lg-6 hero-visual" data-aos="fade-up" data-aos-delay="200">
-            <div class="image-wrapper">
-              <img src="assets/img/misc/misc-square-16.webp" alt="Creative Design" class="main-image">
-              <div class="floating-element top-left">
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <div class="floating-element bottom-right">
-                <i class="bi bi-circle-fill"></i>
-              </div>
-            </div>
+          <div class="col-lg-6 text-center" data-aos="fade-left">
+            <img src="assets/img/misc/misc-square-16.webp" alt="Ilustrasi Belajar Digital"
+              class="img-fluid rounded w-50 floating" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Fitur Section -->
-    <section id="fitur" class="py-5">
+    <!-- Fitur -->
+    <section id="fitur" class="py-5 bg-light">
       <div class="container" data-aos="fade-up">
-        <div class="section-title text-center mb-5">
-          <h2>Fitur Utama</h2>
-          <p>Solusi untuk belajar, bekerja, dan berkembang dari rumah.</p>
+        <div class="text-center mb-5">
+          <h2 class="fw-bold text-primary">Fitur Utama</h2>
+          <p class="text-muted">Solusi untuk belajar, bekerja, dan berkembang dari rumah.</p>
         </div>
-        <div class="row text-center">
-          <div class="col-md-4 mb-4">
-            <div class="p-4 bg-white rounded shadow h-100">
-              <i class="bi bi-journal-text fs-1 text-primary mb-3"></i>
-              <h4>Belajar Mandiri</h4>
-              <p>Belajar menggunakan email, Zoom, Google, dan HP Android secara mandiri.</p>
+        <div class="row text-center g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="card p-4 border-0 shadow rounded-4 h-100">
+              <i class="bi bi-house-door fs-1 text-success mb-3 feature-icon"></i>
+              <h4 class="fw-semibold">Pusat Digital</h4>
+              <p class="text-muted">Panduan akun freelance lewat HP: Upwork, Freelancer, Sribulancer.</p>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="p-4 bg-white rounded shadow h-100">
-              <i class="bi bi-house-door fs-1 text-success mb-3"></i>
-              <h4>Pusat Digital</h4>
-              <p>Panduan daftar akun freelance: Upwork, Freelancer, dan Sribulancer lewat HP.</p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="p-4 bg-white rounded shadow h-100">
-              <i class="bi bi-laptop fs-1 text-danger mb-3"></i>
-              <h4>Meja Digital</h4>
-              <p>Ide usaha seperti reseller, jasa ketik, pengiriman lokal, hingga daftar Shopee/WA Bisnis.</p>
+          <div class="col-md-4">
+            <div class="card p-4 border-0 shadow rounded-4 h-100">
+              <i class="bi bi-laptop fs-1 text-danger mb-3 feature-icon"></i>
+              <h4 class="fw-semibold">Meja Digital</h4>
+              <p class="text-muted">Ide usaha mandiri seperti reseller, jasa ketik, hingga Shopee.</p>
             </div>
           </div>
         </div>
@@ -117,28 +100,206 @@
     </section>
 
     <!-- Meja Digital -->
-     <section>
+    <section id="MejaDigital" class="py-5 bg-light" data-aos="fade-up">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4" data-aos="fade-right">
+            <h5 class="text-uppercase text-primary fw-semibold mb-2 animate-pulse-title">
+              <b>Meja Digital</b>
+            </h5>
+            <h2 class="fw-bold text-dark">Kelola Waktu Kamu di Rumah dengan Lebih Baik</h2>
+            <p class="text-muted">Template jadwal harian dan tips fokus agar lebih produktif selama di rumah.</p>
+            <a href="#templates" class="btn btn-outline-primary mt-2">Lihat Template</a>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fff72131-61dc-40d6-b946-5c7fc0fbf10f.png"
+              alt="Ilustrasi Manajemen Waktu" class="img-fluid rounded shadow" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-     </section>
+    <!-- Templates -->
+    <section id="templates" class="py-5 bg-light">
+      <div class="container" data-aos="fade-up">
+        <div class="text-center mb-5">
+          <h5 class="text-uppercase text-primary fw-semibold mb-2"><b>Kelola Template Anda</b></h5>
+          <p class="text-muted">Unduh template gratis untuk atur waktu belajar atau bekerja dari rumah.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="img-wrapper">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG8DV28EWNKrMaKi2lwhJT1b-0GzQ84cLxvQ&s"
+                  class="card-img-top" alt="Template Work From Home" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Template Work From Home</h5>
+                <p class="card-text">Atur hari Anda dengan metode time-blocking yang mudah.</p>
+                <a href="#" id="download-template" class="btn btn-primary w-100">Download Template</a>
+              </div>
+              <div id="template-alert" class="alert alert-warning alert-dismissible fade d-none mt-3 mx-3 text-center" role="alert">
+                <strong>Template belum tersedia!</strong> Menutup dalam <span id="alert-timer">3</span> detik...
+              </div>
 
-     <!-- About Us -->
-      <section>
-        
-      </section>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="img-wrapper">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa5DDUJcjrORdzUBB7Q6eAn7NkDV0MeF_QIw&s"
+                  class="card-img-top" alt="Template Produktif" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Template Produktif</h5>
+                <p class="card-text">Buat jadwal teratur agar tetap fokus di rumah.</p>
+                <a href="#" class="btn btn-primary w-100">Download Template</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ide Bisnis Rumahan -->
+    <section class="py-5 bg-light">
+      <div class="container" data-aos="fade-up">
+        <div class="text-center mb-4">
+          <h5 class="text-uppercase text-primary fw-semibold mb-2"><b>Ide Bisnis Rumahan</b></h5>
+          <p class="text-muted">Pilih ide usaha yang bisa dijalankan dari rumah dengan modal kecil dan potensi besar.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <a href="#ide1" class="text-decoration-none">
+              <div class="p-4 bg-white border border-light rounded-4 shadow-sm h-100 hover-lift text-center transition">
+                <i class="bi bi-wifi fs-2 text-info mb-3 d-block"></i>
+                <h5 class="fw-semibold text-dark mb-1">Warung Wifi Komunitas</h5>
+                <p class="text-muted small">Buka akses internet terjangkau bagi warga sekitar.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#ide2" class="text-decoration-none">
+              <div class="p-4 bg-white border border-light rounded-4 shadow-sm h-100 hover-lift text-center transition">
+                <i class="bi bi-brush fs-2 text-success mb-3 d-block"></i>
+                <h5 class="fw-semibold text-dark mb-1">Kerajinan Lokal</h5>
+                <p class="text-muted small">Buat produk kreatif dan pasarkan secara digital.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#ide3" class="text-decoration-none">
+              <div class="p-4 bg-white border border-light rounded-4 shadow-sm h-100 hover-lift text-center transition">
+                <i class="bi bi-shop fs-2 text-warning mb-3 d-block"></i>
+                <h5 class="fw-semibold text-dark mb-1">Produk Lokal via Marketplace</h5>
+                <p class="text-muted small">Jual produk lewat Tokopedia, Shopee, dll.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Warung Wifi Komunitas -->
+    <section id="ide1" class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+            <img src="assets/img/misc/warung.jpg" alt="Ilustrasi Warung Wifi" class="img-fluid ide-img" />
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h2 class="fw-bold text-dark">Warung Wifi Komunitas</h2>
+            <p class="text-muted">Solusi mandiri untuk menghadirkan internet murah di desa dan pinggiran kota. Cocok untuk belajar online, akses pekerjaan freelance, dan layanan digital.</p>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Jangkauan wifi lokal untuk warga sekitar</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Bisa dikombinasikan dengan layanan cetak, kopi, atau pulsa</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Mudah dioperasikan dengan router dan voucher</li>
+            </ul>
+            <a href="#wa-button" class="btn btn-outline-primary mt-3">Tanya Cara Memulai</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kerajinan Lokal -->
+    <section id="ide2" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center flex-lg-row-reverse">
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-left">
+            <img src="https://sambangan-buleleng.desa.id/assets/files/artikel/sedang_16931840984.jpg" alt="Ilustrasi Kerajinan Lokal" class="img-fluid ide-img" />
+          </div>
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2 class="fw-bold text-dark">Kerajinan Lokal Digital</h2>
+            <p class="text-muted">Dukung ekonomi kreatif dengan memasarkan hasil karya kerajinan tangan — dari anyaman, bordir, hingga produk daur ulang — lewat platform digital.</p>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Latih warga membuat produk unik berbasis budaya</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Jual produk lewat Instagram, TikTok, dan marketplace</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Sertakan QR code untuk transaksi & portofolio</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-success mt-3">Dapatkan Panduan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Produk Lokal via Marketplace -->
+    <section id="ide3" class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4" data-aos="fade-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1PO9ri95UGC_Pq_LtYBZv5BqCPYdnDMtxMg&s" alt="Produk Lokal Marketplace" class="img-fluid ide-img" />
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h2 class="fw-bold text-dark">Produk Lokal via Marketplace</h2>
+            <p class="text-muted">Dorong pelaku usaha rumahan memasarkan produk mereka lewat Tokopedia, Shopee, dan platform e-commerce lainnya secara mandiri dan profesional.</p>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Panduan membuat akun seller & upload produk</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Optimasi judul, deskripsi, dan foto produk</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Strategi promosi dan pengemasan menarik</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline-warning mt-3">Kunjungi Panduan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider mx-auto my-0"></div>
+    
+    <!-- About Us -->
+    <section id="about" class="py-5 bg-white">
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Tentang Kami" class="img-fluid rounded shadow-sm w-75 mx-auto d-block" />
+          </div>
+          <div class="col-md-6">
+            <h5 class="text-uppercase text-primary fw-semibold mb-2"><b>Tentang Kami</b></h5>
+            <h2 class="fw-bold text-dark">Platform Pintar untuk Era Semua Orang</h2>
+            <p class="text-muted">
+              PINTERA adalah inisiatif digital yang bertujuan untuk membuka akses belajar, bekerja, dan berinovasi dari rumah — bagi siapa saja, di mana saja. Kami percaya bahwa teknologi seharusnya menyetarakan, bukan membatasi.
+            </p>
+            <ul class="list-unstyled text-muted mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Gratis & mudah diakses dari semua perangkat</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Dukung komunitas pinggiran dan desa digital</li>
+            </ul>
+            <a href="#fitur" class="btn btn-outline-primary">Lihat Fitur Kami</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="bg-dark text-white text-center py-4">
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
     <div class="container">
       <p class="mb-0">&copy; 2025 <strong>PINTERA.ID</strong> - All Rights Reserved</p>
     </div>
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" style="display: none;">
     <i class="bi bi-arrow-up-short"></i>
   </a>
 
-  <!-- Vendor JS Files -->
+  <!-- JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -149,5 +310,4 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
-
 </html>
