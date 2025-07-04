@@ -1,60 +1,60 @@
-  .scroll-top {
-    position: fixed;
-    right: 20px;
-    bottom: 30px;
-    width: 40px;
-    height: 40px;
-    background: #0d6efd;
-    color: white;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(20px);
-    transition: all 0.3s ease-in-out;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  background: #0d6efd;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .scroll-top.active {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
-  }
+.scroll-top.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
 
-  /* Whatsapp */
-  .wa-float {
-    animation: floatUpDown 2s ease-in-out infinite;
-    transition: transform 0.3s;
-  }
+/* Whatsapp */
+.wa-float {
+  animation: floatUpDown 2s ease-in-out infinite;
+  transition: transform 0.3s;
+}
 
-  .wa-float:hover {
-    transform: scale(1.1);
-  }
+.wa-float:hover {
+  transform: scale(1.1);
+}
 
-  @keyframes floatUpDown {
-    0%, 100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-6px);
-    }
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0px);
   }
-
-  .zoom-pop {
-    animation: zoomPop 0.6s ease;
+  50% {
+    transform: translateY(-6px);
   }
+}
 
-  @keyframes zoomPop {
-    0% { transform: scale(1); }
-    30% { transform: scale(1.5); }
-    60% { transform: scale(1.2); }
-    100% { transform: scale(1); }
-  }
+.zoom-pop {
+  animation: zoomPop 0.6s ease;
+}
 
-  #wa-button {
+@keyframes zoomPop {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.5); }
+  60% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+#wa-button {
   left: 20px;
   bottom: 20px;
   z-index: 1050;
@@ -65,8 +65,8 @@
   justify-content: center;
 }
 
-  /* Hero */
-  @keyframes floatY {
+/* Hero */
+@keyframes floatY {
   0% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0); }
@@ -180,3 +180,108 @@
   border-radius: 50px;
   margin-bottom: -1rem;
 }
+
+/* Pusat Digital */
+.icon-wrapper {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+/* Detail platform */
+.accordion-button::after {
+  transition: transform 0.3s ease;
+}
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+/* Template bio */
+#floating-alert-pusatdigital {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#floating-alert-pusatdigital.show {
+  opacity: 1;
+}
+
+/* Tombol dibawahnya panduan daftar freelance */
+.modern-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 240px;
+  padding: 12px 24px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #4e9af1, #5fc2ba);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease-in-out;
+  animation: pulseScale 2.8s ease-in-out infinite;
+}
+
+.modern-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+/* Soft pulse animation */
+@keyframes pulseScale {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+/* Cara Pakai HP dan Aplikasi */
+.custom-steps {
+  font-size: 1rem;
+  color: #444;
+  padding-left: 1rem;
+}
+
+.custom-steps li {
+  background: #fff;
+  padding: 15px 20px;
+  border-left: 4px solid #0d6efd;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s;
+}
+
+.custom-steps li:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Kamus Digital */
+.text-gradient {
+  background: linear-gradient(45deg, #0d6efd, #6610f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#kamus-digital table tbody tr {
+  transition: transform 0.3s ease;
+}
+
+#kamus-digital table tbody tr:hover {
+  transform: scale(1.01);
+  background-color: #f0f8ff;
+}
+

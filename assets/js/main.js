@@ -122,7 +122,7 @@ const observer = new IntersectionObserver(
 observer.observe(heroSection);
 
 // template
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const downloadBtn = document.querySelector('#download-template');
   const alertBox = document.querySelector('#template-alert');
   const timerSpan = document.querySelector('#alert-timer');
@@ -151,4 +151,58 @@ observer.observe(heroSection);
   }
 });
 
+// template bio
+document.addEventListener("DOMContentLoaded", function () {
+  const downloadBtn = document.getElementById('unduh-template');
+  const alertBox = document.getElementById('floating-alert-pusatdigital');
+  const timerSpan = document.getElementById('floating-alert-timer');
 
+  if (downloadBtn && alertBox && timerSpan) {
+    downloadBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      let timeLeft = 5;
+      timerSpan.textContent = timeLeft;
+      alertBox.classList.remove('d-none');
+      alertBox.classList.add('show');
+
+      const countdown = setInterval(() => {
+        timeLeft--;
+        timerSpan.textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+          clearInterval(countdown);
+          alertBox.classList.add('d-none');
+          alertBox.classList.remove('show');
+        }
+      }, 1000);
+    });
+  }
+});
+
+// template penawaran
+document.addEventListener("DOMContentLoaded", function () {
+  const unduhBtn = document.querySelector('#unduh-template-penawaran');
+  const alertBox = document.querySelector('#floating-alert-penawaran');
+  const timerText = document.querySelector('#floating-alert-penawaran-timer');
+
+  if (unduhBtn && alertBox && timerText) {
+    unduhBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      alertBox.classList.remove('d-none');
+      let timeLeft = 5;
+      timerText.textContent = timeLeft;
+
+      const countdown = setInterval(() => {
+        timeLeft--;
+        timerText.textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+          clearInterval(countdown);
+          alertBox.classList.add('d-none');
+        }
+      }, 1000);
+    });
+  }
+});
